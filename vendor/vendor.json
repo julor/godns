@@ -1,0 +1,61 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "UJTpOZ5IuuyoWFrS42uw/167mn0=",
+			"path": "github.com/BurntSushi/toml",
+			"revision": "f0aeabca5a127c4078abb8c8d64298b147264b55",
+			"revisionTime": "2016-04-26T10:16:13Z"
+		},
+		{
+			"checksumSHA1": "jqCFBBbqLAbJGe/s7CwUOkqglCs=",
+			"path": "github.com/hoisie/redis",
+			"revision": "b5c6e81454e0395c280f220d82a6854fd0fcf42e",
+			"revisionTime": "2016-07-30T15:44:56Z"
+		},
+		{
+			"checksumSHA1": "tewA7jXVGCw1zb5mA0BDecWi4iQ=",
+			"path": "github.com/jtolds/gls",
+			"revision": "8ddce2a84170772b95dd5d576c48d517b22cac63",
+			"revisionTime": "2016-01-05T22:08:40Z"
+		},
+		{
+			"checksumSHA1": "Wahi4g/9XiHhSLAJ+8jskg71PCU=",
+			"path": "github.com/miekg/dns",
+			"revision": "58f52c57ce9df13460ac68200cef30a008b9c468",
+			"revisionTime": "2016-10-18T06:08:08Z"
+		},
+		{
+			"checksumSHA1": "0DtXHkHCB8kOYM15F+Y5WYMMMuc=",
+			"path": "github.com/smartystreets/assertions",
+			"revision": "edb6e295a22c57a2aa353b2f0729b6eff9f9f4b7",
+			"revisionTime": "2015-12-10T17:08:24Z"
+		},
+		{
+			"checksumSHA1": "QCsUvPHx/Ifqm+sJmocjSvePAIc=",
+			"path": "github.com/smartystreets/assertions/internal/oglematchers",
+			"revision": "edb6e295a22c57a2aa353b2f0729b6eff9f9f4b7",
+			"revisionTime": "2015-12-10T17:08:24Z"
+		},
+		{
+			"checksumSHA1": "fQeXVv5U9dlo3ufH2vjk1GNf4Lo=",
+			"path": "github.com/smartystreets/goconvey/convey",
+			"revision": "a2d5d788f3afbce0989463251ccc5492fad832df",
+			"revisionTime": "2015-12-28T21:47:19Z"
+		},
+		{
+			"checksumSHA1": "9LakndErFi5uCXtY1KWl0iRnT4c=",
+			"path": "github.com/smartystreets/goconvey/convey/gotest",
+			"revision": "a2d5d788f3afbce0989463251ccc5492fad832df",
+			"revisionTime": "2015-12-28T21:47:19Z"
+		},
+		{
+			"checksumSHA1": "Ht2/XG8aSW7vWbwav9z5jKyTzzw=",
+			"path": "github.com/smartystreets/goconvey/convey/reporting",
+			"revision": "a2d5d788f3afbce0989463251ccc5492fad832df",
+			"revisionTime": "2015-12-28T21:47:19Z"
+		}
+	],
+	"rootPath": "github.com/julor/godns"
+}
