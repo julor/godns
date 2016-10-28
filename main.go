@@ -16,6 +16,8 @@ func main() {
 
 	initLogger()
 
+	initHostFiles()
+
 	server := &Server{
 		host:     settings.Server.Host,
 		port:     settings.Server.Port,
@@ -92,4 +94,24 @@ func initLogger() {
 
 func init() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
+}
+
+func exits(filename string) bool {
+	_, err := os.Stat(filename)
+	return err == nil || os.IsExist(err)
+}
+func initHostFiles() {
+	if err := os.Mkdir("./conf", 0775); err != nil {
+		logger.Error("create conf dir error:", err.Error())
+	}
+	if !exits(settings.ResolvConfig.ResolvFile) {
+		if _, err := os.Create(settings.ResolvConfig.ResolvFile); err != nil {
+			logger.Error("create ResolvFile error", err.Error())
+		}
+	}
+	if !exits(settings.Hosts.HostsFile) {
+		if _, err := os.Create(settings.Hosts.HostsFile); err != nil {
+			logger.Error("create HostsFile error", err.Error())
+		}
+	}
 }

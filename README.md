@@ -35,6 +35,20 @@ Similar to [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html), but support
 
 More details about how to install and running godns can reference my [blog (Chinese)](http://blog.kenshinx.me/blog/compile-godns/)
 
+## Run in docker 
+
+1. git clone source code
+
+		$ git clone https://github.com/julor/godns.git
+		
+2. Build
+
+		$ docker build -t godns .
+		
+3. Run
+
+		$ docker run -v ~/dns:/usr/local/godns/conf -p 53:53/udp -p 53:53/tcp --name=godns godns
+
 
 ## Use godns 
 
