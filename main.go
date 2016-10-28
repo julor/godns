@@ -102,7 +102,7 @@ func exits(filename string) bool {
 }
 func initHostFiles() {
 	if err := os.Mkdir("./conf", 0775); err != nil {
-		logger.Error("create conf dir error:", err.Error())
+		logger.Info("create conf dir error:", err.Error())
 	}
 	if !exits(settings.ResolvConfig.ResolvFile) {
 		if _, err := os.Create(settings.ResolvConfig.ResolvFile); err != nil {
