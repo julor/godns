@@ -1,4 +1,4 @@
-﻿FROM alpine
+FROM alpine
 MAINTAINER Julor <julor@qq.com>
 
 RUN mkdir -p /tmp/gocode/src/github.com/julor/godns
